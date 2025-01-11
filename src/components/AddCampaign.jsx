@@ -43,22 +43,22 @@ const AddCampaign = () => {
   };
   return (
     <div>
-      <div className="container mx-auto mt-10 max-w-lg p-10 bg-white rounded-lg shadow-lg mb-10 p-">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6">
+      <div className="container mx-auto mt-10 max-w-lg p-10 border-2 rounded-lg shadow-lg mb-10 p-">
+        <h2 className="text-2xl font-bold text-red-400 mb-6">
           Add New Campaign
         </h2>
 
         <form onSubmit={handleCampaignSubmit}>
           {/* Image URL  */}
           <div className="form-control mb-4">
-            <label className="label font-semibold">
-              <span className="label-text">Image URL</span>
+            <label className="label font-semibold ">
+              <span className="label-text text-blue-600">Image URL</span>
             </label>
             <input
               type="url"
               name="imageURL"
-              placeholder="Enter image URL"
-              className="input input-bordered w-full dark:text-black"
+              placeholder="Enter this image URL"
+              className="input  input-bordered w-full border-dashed border-blue-300 border-2 bg-white  "
               required
             />
           </div>
@@ -66,13 +66,13 @@ const AddCampaign = () => {
           {/* Campaign Title */}
           <div className="form-control mb-4">
             <label className="label font-semibold">
-              <span className="label-text">Campaign Title</span>
+              <span className="label-text text-blue-600">Campaign Title</span>
             </label>
             <input
               type="text"
               name="campaignTitle"
-              placeholder="Enter campaign title"
-              className="input input-bordered w-full dark:text-black"
+              placeholder="Enter this campaign title"
+              className="input input-bordered w-full border-dashed border-blue-300 border-2 bg-white  dark:text-white"
               required
             />
           </div>
@@ -80,32 +80,32 @@ const AddCampaign = () => {
           {/* Campaign Type  */}
           <div className="form-control mb-4">
             <label className="label font-semibold">
-              <span className="label-text">Campaign Type</span>
+              <span className="label-text text-blue-600">Campaign Type</span>
             </label>
             <select
               name="campaignType"
-              className="select select-bordered w-full dark:text-black"
+              className="select select-bordered w-full border-dashed border-blue-300 border-2 bg-white  dark:text-white"
               required
             >
               <option disabled selected>
                 Select type
               </option>
-              <option>Personal Issue</option>
-              <option>Startup</option>
-              <option>Business</option>
-              <option>Creative Ideas</option>
+              <option>Personal problem</option>
+              <option>Start Up</option>
+              <option>Creative</option>
+             
             </select>
           </div>
 
           {/* Description  */}
           <div className="form-control mb-4">
             <label className="label font-semibold">
-              <span className="label-text">Description</span>
+              <span className="label-text text-blue-600">Description</span>
             </label>
             <textarea
               name="description"
-              placeholder="Write a brief description..."
-              className="textarea textarea-bordered w-full dark:text-black"
+              placeholder="Write a best description..."
+              className="textarea textarea-bordered w-full border-dashed border-blue-300 border-2 bg-white  dark:text-black"
               required
             ></textarea>
           </div>
@@ -113,13 +113,13 @@ const AddCampaign = () => {
           {/* Minimum Donation Amount */}
           <div className="form-control mb-4">
             <label className="label font-semibold">
-              <span className="label-text">Minimum Donation Amount</span>
+              <span className="label-text text-blue-600">Minimum Donation Amount</span>
             </label>
             <input
               type="number"
               name="minDonation"
-              placeholder="Enter amount"
-              className="input input-bordered w-full dark:text-black"
+              placeholder="Enter this amount"
+              className="input input-bordered w-full border-dashed border-blue-300 border-2 bg-white  dark:text-white"
               required
             />
           </div>
@@ -127,12 +127,12 @@ const AddCampaign = () => {
           {/* Deadline  */}
           <div className="form-control mb-4">
             <label className="label font-semibold">
-              <span className="label-text">Deadline</span>
+              <span className="label-text text-blue-600">Deadline</span>
             </label>
             <input
               type="date"
               name="deadline"
-              className="input input-bordered w-full dark:text-black"
+              className="input input-bordered border-dashed border-blue-300 border-2 w-full bg-white dark:text-white"
               required
             />
           </div>
@@ -140,12 +140,12 @@ const AddCampaign = () => {
           {/* User Email (Read Only)  */}
           <div className="form-control mb-4">
             <label className="label font-semibold">
-              <span className="label-text">User Email</span>
+              <span className="label-text text-blue-600">User Email</span>
             </label>
             <input
               type="email"
               name="userEmail"
-              className="input input-bordered w-full  bg-gray-200 dark:text-black"
+              className="input input-bordered border-dashed border-blue-300 border-2 w-full  bg-white dark:text-black"
               defaultValue={user?.email || ""}
             />
           </div>
@@ -153,19 +153,19 @@ const AddCampaign = () => {
           {/* User Name (Read Only) */}
           <div className="form-control mb-6">
             <label className="label font-semibold">
-              <span className="label-text">User Name</span>
+              <span className="label-text text-blue-600">User Name</span>
             </label>
             <input
               type="text"
               name="userName"
-              className="input input-bordered w-full bg-gray-200 dark:text-black"
+              className="input input-bordered w-full border-dashed border-blue-300 border-2  bg-gray-200 dark:text-black"
               defaultValue={user?.displayName || ""}
             />
           </div>
 
           {/* Add Button  */}
           <div className="form-control">
-            <button type="submit" className="btn btn-primary w-full dark:text-white">
+            <button type="submit" className="btn btn-outline-primary w-full dark:text-white">
               Add
             </button>
           </div>
