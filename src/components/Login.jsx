@@ -50,21 +50,21 @@ const Login = () => {
   };
 
   return (
-    <div className="w-full min-h-screen flex justify-center items-center py-10  ">
-      <div className="card bg-base-100 shadow-2xl w-[980px] lg:max-w-xl max-w-sm md:max-w-lg p-6 rounded-lg dark:bg-black ">
-        <h2 className="text-3xl font-semibold text-center mb-6 dark:text-white">Login Your Account</h2>
+    <div className="w-full min-h-screen flex justify-center items-center border py-10  ">
+      <div className="card bg-white border-2 border-dashed border-blue-400 shadow-2xl w-[980px] lg:max-w-xl max-w-sm md:max-w-lg p-6 rounded-lg dark:bg-black ">
+        <h2 className="text-3xl font-semibold text-black text-center mb-6 dark:text-white">Login Your Account</h2>
 
         <form onSubmit={handleSubmit} className="card-body">
           {/* Email Field */}
           <div className="form-control mb-4">
             <label className="label">
-              <span className="label-text dark:text-white">Email</span>
+              <span className="label-text text-black dark:text-white">Email</span>
             </label>
             <input
               name="email"
               type="email"
               placeholder="Enter your email"
-              className="input input-bordered w-full dark:text-black"
+              className="input input-bordered text-white w-full dark:text-black"
               required
             />
           </div>
@@ -72,53 +72,53 @@ const Login = () => {
           {/* Password Field */}
           <div className="form-control">
             <label className="label">
-              <span className="label-text dark:text-white">Password</span>
+              <span className="label-text text-black dark:text-white">Password</span>
             </label>
             <input
               name="password"
               type="password"
               placeholder="Enter your password"
-              className="input input-bordered w-full dark:text-black"
+              className="input input-bordered text-white w-full dark:text-black"
               required
             />
-            <Link to="/passreset" className="text-sm text-left text-blue-600 mt-1">
+            <Link to="/passreset" className="text-sm text-left text-blue-800 mt-1">
               Forgot Password?
             </Link>
           </div>
 
            
           {error && (
-              <p className="text-md  text-red-500">
+              <p className="text-md  text-red-600">
                 Invalid Email or Password!
               </p>
             )}
 
           {/* Login Button */}
           <div className="form-control">
-            <button className="btn btn-primary hover:bg-orange-600 hover:text-white text-xl text-white w-full">Login</button>
+            <button className="btn btn-primary hover:bg-blue-600 hover:text-white text-xl text-white w-full">Login</button>
           </div>
 
           {/* OR Divider */}
-          <div className="divider">OR</div>
+          <div className="divider border border-blue-600 border-dashed">OR</div>
 
           {/* Google Login Button */}
           <button
             onClick={LogGoogle}
-            className="btn btn-outline w-full flex items-center text-lg justify-center gap-2"
+            className="btn btn-primary w-full flex items-center text-lg justify-center gap-2"
           >
-            <FaGoogle className="text-2xl " />
-            Continue with Google
+            <FaGoogle className="text-2xl  " />
+           <span className="text-white">Continue with Google</span>
           </button>
 
-          <div className="divider">OR</div>
+          <div className="divider border border-blue-600 border-dashed">OR</div>
 
 
           {/* GitHub Login Button */}
           <button
-            className="btn btn-outline w-full flex items-center text-lg justify-center gap-2"
+            className="btn btn-primary w-full flex items-center text-lg justify-center gap-2"
           >
-            <FaGithub className="text-2xl" />
-            Continue with GitHub
+            <FaGithub className="text-2xl " />
+            <span className="text-white">Continue with GitHub</span>
           </button>
         </form>
 

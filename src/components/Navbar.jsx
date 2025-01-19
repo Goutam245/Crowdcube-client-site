@@ -37,7 +37,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="navbar fixed top-0 bg-orange-100   mx-auto dark:bg-gray-900 dark:text-white z-50">
+    <div className="navbar fixed top-0 bg-blue-800 mx-auto dark:bg-gray-900 dark:text-white z-50">
     
       <div className="navbar-start lg:ml-3">
 
@@ -69,8 +69,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `block px-4 py-2 ${
                     isActive
-                      ? "text-orange-600 font-bold"
-                      : "hover:text-orange-600"
+                      ? "text-white font-bold"
+                      : "hover:text-white"
                   }`
                 }
               >
@@ -81,7 +81,7 @@ const Navbar = () => {
         </div>
 
 
-        <Link to="/" className="btn btn-ghost text-xl text-orange-600 dark:text-orange-400">
+        <Link to="/" className="btn btn-ghost text-xl text-white dark:text-orange-400">
       
           CrowdCube
         </Link>
@@ -97,8 +97,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `text-lg ${
                   isActive
-                    ? "text-orange-600 font-bold"
-                    : "hover:text-orange-600"
+                    ? "text-white font-bold"
+                    : "hover:text-white"
                 }`
               }
             >
@@ -129,18 +129,18 @@ const Navbar = () => {
               data-tip={user?.displayName || "Anonymous"}
             >
               <img
-                src={user?.photoURL || "https://i.pravatar.cc/150"}
+                src={user?.photoURL || "https://i.pravatar.cc/150?"}
                 alt="User Avatar"
-                className="w-12 h-12 rounded-full border-4 border-orange-500"
+                className="w-10 h-10 rounded-full border-2 border-blue-200"
               />
             </div>
-            <button onClick={logoutFunc} className="btn lg:w-20 w-14">
+            <button onClick={logoutFunc} className="btn text-white lg:w-20 w-14">
               LogOut
             </button>
           </div>
         ) : (
           <Link to="/login">
-            <button className="btn lg:w-20 w-14">Login</button>
+            <button className="btn text-white lg:w-20 w-14">Login</button>
           </Link>
         )}
       </div>
