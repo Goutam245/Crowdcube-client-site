@@ -7,7 +7,7 @@ const Banner = () => {
         {/* Slide 1 */}
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="https://media.istockphoto.com/id/1274417514/photo/businessman-holding-graph-growth-of-business-and-block-chain-technology-and-data-analysis-on.jpg?s=612x612&w=0&k=20&c=_1MR9y80KdLvD3gYIVMhkQK_psJo0Z0AOOmXWVqcI2w="
+            src="https://media.istockphoto.com/id/1263260443/vector/crowdfunding.jpg?s=612x612&w=0&k=20&c=KDRtpVkYEPmT-9rEhUg_uyCsL6UdiUhSsYT13HSlRGM="
             className="w-full rounded-2xl"
             alt="Slide 1"
           />
@@ -64,7 +64,7 @@ const Banner = () => {
         {/* Slide 3 */}
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="https://media.istockphoto.com/id/1263260443/vector/crowdfunding.jpg?s=612x612&w=0&k=20&c=KDRtpVkYEPmT-9rEhUg_uyCsL6UdiUhSsYT13HSlRGM="
+            src="https://th.bing.com/th?id=OIF.%2b2GxkArbtRjwedk%2f%2fF2S4w&rs=1&pid=ImgDetMain"
             className="w-full rounded-2xl"
             alt="Slide 3"
           />

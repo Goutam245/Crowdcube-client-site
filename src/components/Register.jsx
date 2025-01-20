@@ -70,13 +70,13 @@ const Register = () => {
   return (
     <div className="min-h-screen flex items-center justify-center py-10 bg-base-200 mb-3">
       <div className="card w-full max-w-lg bg-base-100 shadow-xl p-6 rounded-lg">
-        <h2 className="text-3xl font-bold text-center mb-6">Create an Account</h2>
+        <h2 className="text-3xl font-bold text-center mb-6">Create Account!</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           {/* Name Field */}
           <div className="form-control">
             <label className="label">
               <span className="label-text flex items-center gap-1">
-                <FaUser /> Name
+                <FaUser />Your Name
               </span>
             </label>
             <input
@@ -92,7 +92,7 @@ const Register = () => {
           <div className="form-control">
             <label className="label">
               <span className="label-text flex items-center gap-1">
-                <FaEnvelope /> Email
+                <FaEnvelope />Your Email
               </span>
             </label>
             <input
@@ -150,10 +150,11 @@ const Register = () => {
         {/* Login Link */}
         <p className="text-center mt-4 text-sm">
           Already have an account?{" "}
-          <Link to="/login" className="text-orange-600 font-semibold">
+          <Link to="/login" className="text-blue-400">
             Login
           </Link>
         </p>
+
           {/* OR Divider */}
           <div className="divider">OR</div>
 

@@ -1,20 +1,21 @@
+
+ import successanimation from "../assets/Animation.json";
 import Lottie from "lottie-react";
-import successAnimation from "../assets/sucess.json";
 
 const SuccessStories = () => {
   return (
     <div className="p-5 rounded-2xl lg:p-0">
       {/* Add padding to prevent overlap with sticky navbar */}
       <div className="pt-20 px-6 lg:px-20 mb-5 mt-5">
-        <h2 className="lg:text-4xl text-2xl font-bold text-center text-blue-600 dark:text-blue-400 mb-10">
-          Inspiring <span className="text-orange-600 dark:text-orange-400">Success Stories</span>
+        <h2 className="lg:text-4xl text-2xl font-bold text-center text-blue-600 mb-10">
+          Inspiring <span className="text-blue-600 ">Success Stories</span>
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center gap-10">
           {/* Ensure Lottie container does not overflow */}
           <div className="lg:w-1/2 w-full relative">
             <Lottie
-              animationData={successAnimation}
+              animationData={successanimation}
               loop={true}
               className="max-h-80 mx-auto z-0" // Ensure Lottie has lower z-index
             />
@@ -30,18 +31,18 @@ const SuccessStories = () => {
             <div className="grid gap-6">
               <StoryCard
                 title="Tech Startup Breakthrough"
-                description="A group of developers turned their app idea into a reality, raising $200,000 in just 30 days."
-                tag="Startup"
+                description="A group of developers turned their app idea into a reality, raising $20,000 in just 30 days."
+                tag="Best day"
               />
               <StoryCard
                 title="Medical Miracle"
                 description="With the help of donors, a family raised funds for life-saving surgery for their child."
-                tag="Health"
+                tag="Best Health"
               />
               <StoryCard
                 title="Creative Masterpiece"
                 description="A filmmaker funded their passion project and premiered it at an international festival."
-                tag="Creative"
+                tag="Creative Idea"
               />
             </div>
           </div>
